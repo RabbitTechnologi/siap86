@@ -245,7 +245,7 @@ def gayamiring():
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
 			elif 'mobile' in method:
-				pool.submit(crack,idf,pwv)
+				pool.submit(crack2,idf,pwv)
 			else:
 				pool.submit(crack,idf,pwv)
 	print('')
@@ -293,7 +293,7 @@ def gayanungging():
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
 			elif 'mobile' in method:
-				pool.submit(crack,idf,pwv)
+				pool.submit(crack2,idf,pwv)
 			else:
 				pool.submit(crack,idf,pwv)
 	print('')
@@ -350,7 +350,7 @@ def crack(idf,pwv):
 	loop+=1
 	
 # FB2
-def mobile2(idf,pwv):
+def crack2(idf,pwv):
 	global loop,ok,cp
 	animasi = random.choice(["\x1b[1;91m🕧","\x1b[1;92m🕐","\x1b[1;93m🕑","\x1b[1;94m🕒","\x1b[1;95m🕓","\x1b[1;96m🕔","\x1b[1;97m🕕","\x1b[1;91m🕖","\x1b[1;92m🕗","\x1b[1;93m🕘","\x1b[1;94m🕙","\x1b[1;95m🕚","\x1b[1;96m🕛"])
 	sys.stdout.write(f"\r {animasi} {P}[{M}{loop}{N}/{M}{len(id)}{P}] {P}[{H}OK:{ok}{P}] {P}[{M}CP:{cp}{P}] [{H}{'{:.0%}'.format(loop/float(len(id)))}{P}]"),
