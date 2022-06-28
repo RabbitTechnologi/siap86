@@ -1,6 +1,6 @@
 # METHODE UMUM YANG BANYAK DIGUNAKAN
 # PADA INTINYA UDAH GUE CEK SEMUA SC YG MEREKA PAKE 
-# SAMA SAJA HANYA DI HEADER YANG BERBEDA
+# SAMA SAJA HANYA DI HEADER YANG BERBEDA 
 # MASALAH CODINGAN SAMA CUMA DIRUBAH MODEL CODINGAN SAJA
 # PADA INTINYA MEMAKAI METHODE YANG SAMA KAYA CONTOH SC YG GUE BUAT INI
 # JADI PAHAMI YANG PEMULA BIYAR TIDAK DIBODOHI
@@ -77,7 +77,7 @@ def loading():
         sys.stdout.flush()
     print("")
 
-### UNTUK AMBIL PROXY #### 
+### UNTUK AMBIL PROXY GITU AJA KOK REPOT #### 
 proxy= requests.get('https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all').text
 open('proxy.txt','w').write(proxy)
 proxy=['SupportsFresco=1 Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J210F Build/MMB29Q) Source/1 [FBAN/EMA;UNITY_PACKAGE/342;FBBV/107586706;FBAV/172.0.0.8.182;FBDV/SM-J210F;FBLC/id_ID;FBOP/20]','Mozilla/5.0 (Linux; Android 8.1.0; Redmi 4X Build/OPM1.171019.018) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.109 Mobile Safari/537.36','NokiaC3-00/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+']
